@@ -1,0 +1,77 @@
+week 2
+ q1
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int num = 96;
+    if (num > 0)
+         cout << "The number is positive";
+    else if (num < 0)
+        cout << "The number is negative";
+    else
+        cout << "Zero";
+
+    return 0;
+}
+q2
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    int num = -12;
+    if (num >= 0)
+    {
+        if (num == 0)
+            cout << "Zero";
+        else
+            cout << "The number is positive";
+    }
+    else
+            cout << "The number is negative";
+
+    return 0;
+}
+q3
+#include <iostream>
+using namespace std;
+
+int main() {
+
+  int year;
+  cout << "Enter a year: ";
+  cin >> year;
+  if (year % 400 == 0) {
+    cout << year << " is a leap year.";
+  }
+  // but not divisible by 400
+  else if (year % 100 == 0) {
+    cout << year << " is not a leap year.";
+  }
+  else if (year % 4 == 0) {
+    cout << year << " is a leap year.";
+  }
+  else {
+    cout << year << " is not a leap year.";
+  }
+
+  return 0;
+}
+q5
+#include <iostream>
+using namespace std;
+int main(){
+    int i, amount; 
+    int arr[9] = {2000, 500, 100, 50, 20, 10, 5, 2, 1};
+
+    cout << "Enter the amount: ";
+    cin >> amount;
+
+    for (i = 0; i < 9; i++){
+        cout << arr[i] << " Note: " << amount / arr[i] << endl;
+        amount = amount % arr[i];
+    }
+    return 0;
+}
